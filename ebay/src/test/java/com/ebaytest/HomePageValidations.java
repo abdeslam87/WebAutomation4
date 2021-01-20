@@ -7,58 +7,29 @@ import pages.HomePage;
 
 public class HomePageValidations extends TestBase {
 
-    @Test(enabled = false)
-    public void ValidateUserCanTypeOnSearchBar() throws InterruptedException {
+
+    @Test
+    public void VlidateUserCanTypeOnSearchBar() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.TypeOnSearchBar("Java Books");
+        homePage.TypeOnSearchBar("Java books");
 
     }
-        @Test
 
-     public void ValidateUserBeinAbleToclickOnSearchButton() throws InterruptedException {
+    @Test
+    public void ValidateUserBeingAbletoClickOnSignin() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.ClickOnSearchButton();
-
-        }
-
-        @Test
-    public void ValidateUserCanClickOnSigninButton(){
-        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.ClickOnSignInButton();
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        homePage.ClickOnSignin();
 
     }
+
+    @Test
+    public void ValidateUserBeingAbleToClickOnSellButton() {
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        homePage.ClickOnSell();
+
+    }
+
+}
 
 
 
